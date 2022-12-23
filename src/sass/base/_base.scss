@@ -35,7 +35,7 @@ img {
     max-width: 1200px;
     margin: 0 auto;
 
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 767px) {
       max-width: 480px;
         padding-left: 20px;
         padding-right: 20px;
