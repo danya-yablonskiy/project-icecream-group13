@@ -1,0 +1,185 @@
+.contacts{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.contacts__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @media screen and (min-width: 768px){
+        margin-bottom: 40px;
+    }
+
+.contacts__item{
+    width: 280px;
+    background-color: $primary-white-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 768px){
+        flex-basis: calc((100% - 32px) /3);
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+}
+
+
+.contacts__category{
+    display: inline-block;
+    height: 22px;
+    padding: 4px 22px;
+    background-color: $accent-color;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px){
+        height: 30px;
+        margin-bottom: 32px;
+    }
+}
+
+.contacts__category--name{
+font-weight: 500;
+font-size: 12px;
+
+@media screen and (min-width: 768px){
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+}
+}
+
+.contacts__address--location{
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+letter-spacing: 0.04em;
+margin-bottom: 8px;
+
+@media screen and (min-width: 768px){
+    font-size: 14px;
+}
+}
+
+.contacts__address--link{
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 183%;
+letter-spacing: 0.04em;
+color: $additional-brown;
+text-decoration: none;
+
+@media screen and (min-width: 768px){
+    font-size: 14px;
+}
+
+}
+
+.contacts__address{
+    border-bottom: 1px solid $line-color;
+    width: 216px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+
+        @media screen and (min-width: 768px){
+        width: 176px;
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.contacts__working-hours{
+    border-bottom: 1px solid $line-color;
+    width: 216px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 768px){
+        width: 176px;
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.contacts__working-hours--days{
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+
+@media screen and (min-width: 768px){
+    font-size: 14px;
+}
+}
+
+.contacts__working-hours--time{
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+color: $button-disabled-color;
+
+@media screen and (min-width: 768px) {
+    font-size: 14px;
+}
+}
+
+.contacts__communication{
+    display: inline-block;
+}
+
+.contacts__communication--link{
+font-weight: 500;
+font-size: 12px;
+line-height: 160%;
+color: $primary-black-color;
+text-decoration: none;
+
+@media screen and (min-width: 768px){
+font-size: 14px;
+line-height: 150%;
+}
+}
+
+
+.contacts__button{
+    text-align: center;
+}
+
+.contacts__button--locations{
+    display: inline-block;
+    min-width: 196px;
+    height: 42px;
+    margin-bottom: 18px;
+
+    background-color: $accent-color;
+    border-radius: 10px;
+    border: transparent;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    margin-right: 16px;
+}
+
+.contacts__button--franchise{
+    display: inline-block;
+    min-width: 196px;
+    height: 42px;
+
+    background-color: $input-border;
+    border-radius: 10px;
+    border: 2px solid $accent-color;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: $button-black-color;
+}
