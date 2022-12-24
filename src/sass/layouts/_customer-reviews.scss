@@ -67,6 +67,7 @@
     &__img{
         // display: flex;
         max-width: 280px;
+        
         // position:fixed;
         // top:0;
         // left:0;
@@ -80,7 +81,28 @@
     text-align: center;
     
   }
-  
+  &__photo{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__text{
+    margin:0;
+
+    color:#FCFCFC;
+    background-color: #84A178;
+    padding:39px 35px;
+    border-radius: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height:calc(31px/12px);
+    text-align: center;
+  }
 }
 img {
   display: block;
@@ -111,6 +133,7 @@ img {
     height: 250px;
     background-color: white;
 }
-// .swiper-slide-active{
-//     overflow: hidden;
+// .swiper-slide{
+//     display: flex;
+//     gap:32px;
 // }

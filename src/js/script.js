@@ -1,4 +1,4 @@
-import Swiper from "swiper";
+import Swiper from "swiper/swiper-bundle";
 
 //Ініціалізація Swiper
 new Swiper('.swiper-1',{
@@ -10,21 +10,30 @@ new Swiper('.swiper-1',{
     speed: 2000,
     spaceBetween: 50 ,
     centeredSlides: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-        // renderBullet: function (index, className) {
-        //     return '<li class="' + className + '"></li>';
-        // },
-   // }
+
+    effect: 'flip',
+    flipEffect: {
+        slideShadows: true,
+        limitRotation: true
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        
+   }
     
     
 });
 
 new Swiper('.swiper-2', {
+    loop: true,
     pagination: {
         el: '.swiper-pagination',
         type:"bullets",
         clickable: true
-    }
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
 });
