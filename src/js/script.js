@@ -8,15 +8,15 @@ new Swiper('.swiper-1',{
     slideToClickedSlide: true,
     //автопрокрутка
     speed: 2000,
-    spaceBetween: 100 ,
+    spaceBetween: 50 ,
     centeredSlides: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
         // renderBullet: function (index, className) {
         //     return '<li class="' + className + '"></li>';
         // },
-    }
+   // }
     
     
 });

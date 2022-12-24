@@ -98,15 +98,11 @@ img {
     font-size: 14px;
     background-color: black;
 }
-// body{
-//     position: relative;
-// }
-.swiper-1{
+
+.swiper-1 .swiper-wrapper{
     position: absolute;
     top:-32px;
-    // left:0;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 .swiper-wrapper{
     margin:0;
@@ -115,3 +111,6 @@ img {
     height: 250px;
     background-color: white;
 }
+// .swiper-slide-active{
+//     overflow: hidden;
+// }
