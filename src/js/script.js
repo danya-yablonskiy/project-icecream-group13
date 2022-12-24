@@ -10,17 +10,17 @@ new Swiper('.swiper-1',{
     speed: 2000,
     spaceBetween: 50 ,
     centeredSlides: true,
-
-    effect: 'flip',
-    flipEffect: {
-        slideShadows: true,
-        limitRotation: true
-    },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+    // limitRotation: true,
+    // effect: 'flip',
+    // flipEffect: {
+    //     slideShadows: true,
+    //     limitRotation: true
+    // },
+//     autoplay: {
+//         delay: 3000,
+//         disableOnInteraction: false,
         
-   }
+//    }
     
     
 });

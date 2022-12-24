@@ -1,3 +1,4 @@
+import Swiper from "swiper/swiper-bundle";
 (() => {
     
 
@@ -11,7 +12,7 @@
                     centeredSlides: true,
                     autoplay: {
                         delay: 5000,
-                        disableOnInteraction: false,
+                        disableOnInteraction: true,
                     },
                     slidesPerView: 1,
                     spaceBetween: 20,

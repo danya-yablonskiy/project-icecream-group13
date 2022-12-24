@@ -1,2 +1,2 @@
-// import '../src/js/customer-reviews';
-import '../src/js/script'
+import '../src/js/customer-reviews';
+// import '../src/js/script'
