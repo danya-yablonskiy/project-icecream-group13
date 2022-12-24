@@ -38,15 +38,15 @@ img {
     margin: 0 auto;
 
     @media screen and (min-width: 480px) {
-        width: 480px;
+      width: 480px;
     }
 
     @media screen and (min-width: 768px) {
-          width: 768px;
-          padding-left: 32px;
-          padding-right: 32px;
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
     }
-    
+
     @media screen and (min-width: 1200px) {
       width: 1200px;
       padding-left: 16px;
