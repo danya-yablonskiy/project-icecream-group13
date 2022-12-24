@@ -1,6 +1,17 @@
 .contacts{
     padding-top: 40px;
     padding-bottom: 60px;
+    background-color: $bg-color;
+
+    @media screen and (min-width: 768px){
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px){
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
 }
 
 .contacts__list{
@@ -12,25 +23,28 @@
         margin-bottom: 40px;
     }
 
+    @media screen and (min-width: 1200px){
+        margin-bottom: 60px;
+        justify-content: space-between;
+    }
+}
 .contacts__item{
     width: 280px;
     background-color: $primary-white-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-
-    padding-top: 20px;
-    padding-left: 32px;
-    padding-bottom: 24px;
+    padding: 40px 32px 24px 32px;
 
     @media screen and (min-width: 768px){
         flex-basis: calc((100% - 32px) /3);
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 40px 24px ;
+    }
+
+    @media screen and (min-width: 1200px){
+        flex-basis: calc((100% - 64px) /3);
+        padding: 40px;
     }
 }
-
-}
-
 
 .contacts__category{
     display: inline-block;
@@ -50,8 +64,7 @@
 font-weight: 500;
 font-size: 12px;
 
-@media screen and (min-width: 768px){
-font-weight: 500;
+ @media screen and (min-width: 768px){
 font-size: 16px;
 line-height: 140%;
 }
@@ -68,6 +81,10 @@ margin-bottom: 8px;
 @media screen and (min-width: 768px){
     font-size: 14px;
 }
+
+@media screen and (min-width: 1200px){
+    font-size: 16px;
+}
 }
 
 .contacts__address--link{
@@ -83,6 +100,15 @@ text-decoration: none;
     font-size: 14px;
 }
 
+@media screen and (min-width: 1200px){
+    font-size: 16px;
+
+    &:hover{
+        text-decoration: underline;
+    }
+
+}
+
 }
 
 .contacts__address{
@@ -95,6 +121,10 @@ text-decoration: none;
         width: 176px;
         margin-bottom: 32px;
         padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 288px;
     }
 }
 
@@ -109,6 +139,10 @@ text-decoration: none;
         margin-bottom: 32px;
         padding-bottom: 32px;
     }
+
+    @media screen and (min-width: 1200px){
+        width: 288px;
+    }
 }
 
 .contacts__working-hours--days{
@@ -118,6 +152,10 @@ line-height: 186%;
 
 @media screen and (min-width: 768px){
     font-size: 14px;
+}
+
+@media screen and (min-width: 1200px){
+    font-size: 16px;
 }
 }
 
@@ -129,6 +167,10 @@ color: $button-disabled-color;
 
 @media screen and (min-width: 768px) {
     font-size: 14px;
+}
+
+@media screen and (min-width: 1200px){
+    font-size: 16px;
 }
 }
 
@@ -147,11 +189,20 @@ text-decoration: none;
 font-size: 14px;
 line-height: 150%;
 }
+
+@media screen and (min-width: 1200px){
+    font-size: 16px;
+}
+
 }
 
 
 .contacts__button{
     text-align: center;
+
+    @media screen and (max-width: 767px){
+        margin-top: 18px;
+    }
 }
 
 .contacts__button--locations{
@@ -167,7 +218,23 @@ line-height: 150%;
     font-weight: 600;
     font-size: 14px;
 
-    margin-right: 16px;
+    &:hover{
+        background-color: $button-hover-focus-color;
+    }
+
+    &:focus{
+        color: $button-white-color;
+        background-color: $button-hover-focus-color;
+        fill: $button-white-color;
+    }
+
+    &:disabled{
+        color: $color-time;
+    }
+
+    @media screen and (min-width: 768px){
+        margin-right: 16px;
+    }
 }
 
 .contacts__button--franchise{
@@ -175,11 +242,30 @@ line-height: 150%;
     min-width: 196px;
     height: 42px;
 
-    background-color: $input-border;
+    background-color: $bg-color;
     border-radius: 10px;
     border: 2px solid $accent-color;
 
     font-weight: 600;
     font-size: 14px;
     color: $button-black-color;
+
+    &:hover{
+        border: 2px solid $button-hover-focus-color;
+    }
+
+    &:focus{
+        color: $button-white-color;
+        fill: $button-white-color;
+    }
+
+    &:disabled{
+        color: $color-time;
+    }
+}
+
+.contacts__button--svg{
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
 }
