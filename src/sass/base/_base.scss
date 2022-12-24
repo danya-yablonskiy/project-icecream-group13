@@ -1,6 +1,6 @@
 body{
-  background-color: $primary-white-color;
-  color: $primary-black-color;
+  background-color: $bg-color;
+  color: $primary-white-color;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.04em
 }
@@ -23,10 +23,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.list {
-  list-style: none;
 }
 
 // Параметри для контейнеру

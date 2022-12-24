@@ -1,3 +1,99 @@
-.about__img{
+.about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about__title-label{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.23;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__title{
+    font-family: 'Seymour One';
+    font-size: 36px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.about__img-bg{
+    position: relative;
+
     border-radius: 50%;
+    height: 490px;
+    width: 490px;
+
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
+
+.about__img{
+    position: absolute;
+    top: 39px;
+
+    border-radius: 50%;
+
+    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        top:0;
+    }
+}
+
+.about__content-box{
+    display: flex;
+    justify-content:space-between;
+
+    margin-top: 82px;
+}
+
+.about__text-box{
+    margin-top: 90px;
+}
+
+.how-its-made-list{
+    @extend %list;
+
+    width: 463px;
+    margin-right: 105px;
+}
+
+.how-its-made-list__item:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.how-its-made-list__text{
+    font-size: 16px;
+    line-height: 1.76;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 54px;
+
+    width: 164px;
+    height: 42px;
+
+    background-color: $accent-color;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: $button-black-color;
+}
+
+.btn__icon{
+    fill: black;
 }
