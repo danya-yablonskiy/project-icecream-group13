@@ -72,26 +72,15 @@
     }
     &__item {
     text-align: center;
-    // &.swiper-slide-active {
-    //   .team__desc p {
-    //     transform: translateY(0);
-    //     opacity: 1;
-    //   }
-    // }
-    // &.is-play {
-    //   .team__desc p {
-    //     transform: translateY(0);
-    //     opacity: 1;
-    //   }
-    // }
+    
   }
   &__pagination {
     &.swiper-pagination {
       bottom: 0;
     }
-    .swiper-pagination-bullet {
+    .swiper-pagination-bullets {
       background: #939eac;
-      &.swiper-pagination-bullet-active {
+      &.swiper-pagination-bullets-active {
         background: #06071b;
         }
     }
