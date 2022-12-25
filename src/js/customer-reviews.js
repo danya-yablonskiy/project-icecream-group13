@@ -61,8 +61,8 @@ import Swiper from "swiper/swiper-bundle";
                     loop: true,
                     centeredSlides: true,
                     autoplay: {
-                        delay: 5000,
-                        disableOnInteraction: false,
+                        delay: 6000,
+                        disableOnInteraction: true,
                     },
                     slidesPerView: 1,
                     spaceBetween: 20,
