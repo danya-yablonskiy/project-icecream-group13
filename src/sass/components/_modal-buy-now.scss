@@ -109,6 +109,10 @@
     @media screen and (min-width: 768px) {
       width: 368px;
     }
+
+    &:invalid {
+      border-color: red;
+    }
   }
 
   &__textarea {
@@ -142,6 +146,7 @@
     background-color: $accent-color;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -211,7 +216,6 @@
 
   .modal-buy-now__checkbox:checked + & {
     background-color: $additional-green;
-    border: none;
 
     &--border-yellow {
       background-color: $additional-yellow;
