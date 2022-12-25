@@ -1,0 +1,92 @@
+<div class="header-backdrop header-backdrop--is-hidden" data-modal>
+  <div class="modal-buy-now">
+    <button type="button" class="modal-buy-now__close-button" data-modal-close>
+      <svg class="modal-buy-now__close-icon">
+        <use href="./images/header-icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <p class="modal-buy-now__text">Buy now</p>
+    <ul class="modal-buy-now__product-list">
+      <li class="modal-buy-now__product-item">
+        <label class="modal-buy-now__label">
+          <input
+            class="modal-buy-now__checkbox modal-buy-now__checkbox--visually-hidden"
+            type="checkbox"
+            name="ice-cream"
+            value="ice-cream"
+          />
+          <div class="modal-buy-now__checkbox-icon">
+            <img
+              class="modal-buy-now__image"
+              src="./images/buy-now-ice-cream.png"
+              alt="Ice cream"
+            /><span class="modal-buy-now__title">Ice cream</span>
+          </div>
+        </label>
+      </li>
+
+      <li class="modal-buy-now__product-item">
+        <label class="modal-buy-now__label">
+          <input
+            class="modal-buy-now__checkbox modal-buy-now__checkbox--visually-hidden"
+            type="checkbox"
+            name="ice-coffee"
+            value="ice-coffee"
+          />
+          <div
+            class="modal-buy-now__checkbox-icon modal-buy-now__checkbox-icon--border-yellow"
+          >
+            <img
+              class="modal-buy-now__image"
+              src="./images/buy-now-ice-cream.png"
+              alt="Ice cream"
+            /><span class="modal-buy-now__title">Ice coffee</span>
+          </div>
+        </label>
+      </li>
+
+      <li class="modal-buy-now__product-item">
+        <label class="modal-buy-now__label">
+          <input
+            class="modal-buy-now__checkbox modal-buy-now__checkbox--visually-hidden"
+            type="checkbox"
+            name="milkshake"
+            value="milkshake"
+          />
+          <div
+            class="modal-buy-now__checkbox-icon modal-buy-now__checkbox-icon--border-brown"
+          >
+            <img
+              class="modal-buy-now__image"
+              src="./images/buy-now-ice-cream.png"
+              alt="Ice cream"
+            /><span class="modal-buy-now__title">Milkshake</span>
+          </div>
+        </label>
+      </li>
+    </ul>
+    <form class="form-buy-now">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-buy-now__input"
+        placeholder="Name"
+      />
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        class="form-buy-now__input"
+        placeholder="Phone"
+      />
+      <textarea
+        class="form-buy-now__textarea"
+        name="comment"
+        id="comment"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="form-buy-now__button">Submit</button>
+    </form>
+  </div>
+</div>
