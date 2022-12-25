@@ -9,6 +9,7 @@ import Swiper from "swiper/swiper-bundle";
                 let pagination = slider.querySelector('.swiper-pagination');
                 swiper = new Swiper(slider.querySelector('.swiper'), {
                     speed: 2000,
+                    loop: true,
                     centeredSlides: true,
                     autoplay: {
                         delay: 5000,
