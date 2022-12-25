@@ -1,4 +1,7 @@
 .about{
+    background-color: $bg-color;
+    color: $primary-white-color;
+
     padding-top: 60px;
     
     @media screen and (max-width:767px) {
@@ -76,6 +79,9 @@
     @media screen and (max-width:767px) {
         height: 279px;
         width: 279px;
+
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen and (min-width:768px) and (max-width:1199px) {
@@ -227,7 +233,7 @@
     }
 
     &:disabled{
-        background-color: $button-disabled-color;
+        background-color: $color-time;
     }
 
     @media screen and (max-width:767px) {

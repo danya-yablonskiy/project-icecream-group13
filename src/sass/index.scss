@@ -1,9 +1,9 @@
-@import './utils/variables';
-@import './utils/placeholders';
 @import './common';
-@import './utils/vissually-hidden';
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
 @import './base/base';
-@import './components/components';
-@import './layouts/header';
-@import './layouts/about';
-@import './layouts/footer';
+@import './components/footer';
+@import './components/header';
+@import './components/about';
+// @import './';
