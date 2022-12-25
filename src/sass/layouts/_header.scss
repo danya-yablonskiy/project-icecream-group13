@@ -1,0 +1,185 @@
+/* Хедер */
+
+.page-header {
+  position: relative;
+  padding: 12px 0;
+  background-color: $bg-color;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 28px 0;
+  }
+}
+
+/* Логотип */
+
+.logo {
+  color: $accent-color;
+
+  &__icon {
+    width: 40px;
+    height: 37px;
+    fill: currentColor;
+
+    @media screen and (min-width: 768px) {
+      width: 48px;
+      height: 44px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 60px;
+      height: 55px;
+    }
+  }
+}
+
+/* Основна навігація */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    @media screen and (max-width: 1199px) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      padding-top: 50px;
+      padding-bottom: 64px;
+      background-color: $bg-color;
+      text-align: center;
+    }
+
+    &--is-open {
+      display: block;
+    }
+  }
+}
+
+.site-nav {
+  list-style: none;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 110px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 28px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: $primary-white-color;
+
+    &:hover,
+    &:focus {
+      color: $primary-black-color;
+
+      @media screen and (min-width: 1200px) {
+        color: $accent-color;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Кнопка Buy now */
+
+.buy-now-button {
+  padding: 12px 36px;
+  border: none;
+  border-radius: 10px;
+  background-color: $accent-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-focus-color;
+  }
+
+  &:focus {
+    color: $primary-white-color;
+    background-color: $button-hover-focus-color;
+  }
+
+  &--mobile-disabled {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &--tablet-disabled {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+/* Кнопка мобільного меню */
+
+.menu-button {
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  color: $primary-white-color;
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__icon-cross {
+    display: none;
+  }
+
+  &--is-open &__icon-cross {
+    display: block;
+  }
+
+  &--is-open &__icon-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
