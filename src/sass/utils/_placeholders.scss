@@ -1,0 +1,13 @@
+%list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+%link {
+    text-decoration: none;
+}
+%wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
