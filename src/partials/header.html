@@ -1,0 +1,63 @@
+<!-- Основна навігація -->
+<div class="container">
+  <nav class="main-nav">
+    <a href="./index.html" class="logo">
+      <svg class="logo__icon">
+        <use href="./images/header-icons.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <button
+      type="button"
+      class="menu-button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-menu-button
+    >
+      <svg
+        width="32"
+        height="32"
+        class="menu-button__icon"
+        aria-label="Перемикач мобільного меню"
+      >
+        <use
+          class="menu-button__icon-cross"
+          href="./images/header-icons.svg#icon-cross"
+        ></use>
+        <use
+          class="menu-button__icon-menu"
+          href="./images/header-icons.svg#icon-menu"
+        ></use>
+      </svg>
+    </button>
+    <div class="main-nav__wrapper" id="mobile-menu" data-menu>
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a href="" class="site-nav__link">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="site-nav__link">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="site-nav__link">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="site-nav__link">Contact</a>
+        </li>
+      </ul>
+      <button
+        type="button"
+        class="buy-now-button buy-now-button--tablet-disabled"
+        data-modal-open
+      >
+        Buy now &gt;
+      </button>
+    </div>
+    <button
+      type="button"
+      class="buy-now-button buy-now-button--mobile-disabled"
+      data-modal-open
+    >
+      Buy now &gt;
+    </button>
+  </nav>
+</div>
