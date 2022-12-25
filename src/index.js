@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 (() => {
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
@@ -29,4 +27,3 @@
     refs.modal.classList.toggle('header-backdrop--is-hidden');
   }
 })();
->>>>>>> Stashed changes
