@@ -1,6 +1,7 @@
 .hero {
     background-color: $bg-color;
     padding-top: 50px;
+    position: relative;
 }
 
 .hero__title {
@@ -61,6 +62,11 @@
 .hero__text {
     display: none;
 }
+
 .hero__wrapper {
     display: none;
+}
+
+.hero__img {
+    position: absolute;
 }
