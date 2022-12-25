@@ -1,7 +1,9 @@
 .hero {
     background-color: $bg-color;
-    padding-top: 50px;
+    padding-top: 99px;
     position: relative;
+    height: 502px;
+
 }
 
 .hero__title {
@@ -21,6 +23,14 @@
     align-items: baseline;
 }
 
+.hero__list-item {
+    &:first-child {
+        margin-right: 12px;
+        margin-bottom: 19px;
+    }
+
+}
+
 .hero__link {
     display: block;
     font-family: 'Montserrat';
@@ -29,8 +39,8 @@
     line-height: calc(15/12);
 
     &--first {
-        margin-right: 12px;
-        margin-bottom: 19px;
+
+
         padding: 11px 26px;
         border: 2px solid $accent-color;
         border-radius: 8px;
@@ -69,4 +79,12 @@
 
 .hero__img {
     position: absolute;
+    z-index: 2;
+    top: 285px;
+    left: 83px;
+    
+}
+.hero__group-icon--mobile {
+    position: absolute;
+    bottom: 0;
 }
