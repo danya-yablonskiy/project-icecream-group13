@@ -130,13 +130,14 @@ img {
 .swiper > .swiper-pagination{
     bottom:0;
     margin: 0;
+    display:flex;
+    gap:18px;
+    justify-content: center;
 }
 .swiper-pagination > .swiper-pagination-bullet{
     width: 12px;
     height: 12px;
-    background-color: #84A178;
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
-    margin-right: 18px;
+    background-color: #84A178;    
 }
 .team{
     border:2px solid black; 
