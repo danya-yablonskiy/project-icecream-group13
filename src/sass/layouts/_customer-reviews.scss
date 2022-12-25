@@ -5,7 +5,7 @@
         position:relative;
         width: 100vw;
         height: 100vh;
-        padding-top: 178px;
+        // padding-top: 178px;
         padding-bottom: 393px;
         
         margin-left: auto;
@@ -42,7 +42,7 @@
             }
 
         @media screen and (min-width: 768px) {
-            width: 768px;
+            width: 704px;
             padding-left: 32px;
             padding-right: 32px;
             }
@@ -71,12 +71,28 @@
        top:-32px;
        left:50%;
        transform: translate(-50%,0);
+       @media screen and (min-width:768px){
+        top:-144px;
+       }
+       @media screen and (min-width:1200px){
+        top:-98px;
+       }
     }
     &__img{
         background-size:cover;
-        // max-width: 280px;
-        // width: 100%;
+        max-width: 280px;
+        width: 100%;
         border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (min-width:768px){
+            max-width:704px ;
+            border-radius: 18px;
+        }
+        @media screen and (min-width:1200px){
+            max-width: 1013px;
+            border-radius: 24px;
+        }
     }
     &__photo{
         border-radius: 50%;
@@ -84,6 +100,12 @@
         margin-right: auto;
         margin-top: 80px;
         margin-bottom: 32px;
+        @media screen and (min-width:768px){
+            margin-top: 100px;
+        }
+        @media screen and (min-width:1200px){
+            margin-top: 140px;
+        }
     }
     &__text{
         font-family: 'Montserrat';
@@ -99,6 +121,21 @@
 
         padding: 35px 39px;
         margin: 0 0 32px 0;
+        @media screen and (min-width:768px){
+            border-radius:24px ;
+            padding: 28px 80px 29px 80px;            
+            
+            font-weight: 500;
+            font-size: 14px;
+            line-height: calc(26px / 14px);
+            letter-spacing: 0.04em;    
+        }
+        @media screen and (min-width:1200px){
+            padding:43px 109px ;
+
+            font-size: 16px;
+            line-height: calc(30px / 16px);
+        }
     }
     &__name{
         font-family: 'Montserrat';
@@ -111,6 +148,11 @@
         color: #131313;
 
         margin:0 0 24px 0;
+        @media screen and (min-width:768px){
+            font-size: 16px;
+            line-height:calc(30px / 16px);
+        }
+        
     }
 }
 img {
