@@ -3,18 +3,29 @@
     padding-top: 99px;
     padding-bottom: 217px;
     position: relative;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 164px;
+    }
 }
 
 .hero__title {
+    display: inline-block;
     margin-bottom: 32px;
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
-    line-height: calc(33/26);
+    line-height: calc(33 / 26);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $primary-white-color;
+
+    @media screen and (min-width: 768px) {
+        max-width: 247px;
+        margin-bottom: 24px;
+    }
 }
 
 .hero__list-menu {
@@ -26,8 +37,11 @@
     &:first-child {
         margin-right: 12px;
         margin-bottom: 19px;
-    }
 
+        @media screen and (min-width: 768px) {
+            margin-bottom: 12px;
+        }
+    }
 }
 
 .hero__link {
@@ -35,19 +49,35 @@
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 12px;
-    line-height: calc(15/12);
+    line-height: calc(15 / 12);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(18/14);
+    }
 
     &--first {
-
-
         padding: 11px 26px;
         border: 2px solid $accent-color;
         border-radius: 8px;
 
-        &:hover {
-            border-color: $button-hover-focus-color;
+        @media screen and (min-width: 1200px) {
+            border-radius: 10px;
+            padding: 12px 34px;
+
+            &:focus {
+                color: $primary-white-color;
+            }
+
+            &:disabled {
+                border-color: $button-disabled-color;
+            }
         }
 
+        &:hover {
+            border-color: $button-hover-focus-color;
+
+        }
     }
 
     &--second {
@@ -68,20 +98,80 @@
     }
 }
 
-.hero__text {
+.hero__text-wrapper {
     display: none;
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        position: absolute;
+        right: 32px;
+        top: 94px;
+        text-align: right;
+
+        .hero__number {
+            font-weight: 900;
+            font-size: 28px;
+            line-height: calc(34/28);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $primary-black-color;
+        }
+
+        .hero__text {
+            font-size: 8px;
+            line-height: calc(10/8);
+            color: $primary-white-color;
+
+            &:first-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 .hero__wrapper {
     display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        align-items: center;
+
+        .wrapper__description {
+            position: relative;
+            width: 150px;
+            font-size: 12px;
+            line-height: calc(17/12);
+            color: $primary-white-color;
+        }
+
+        .hero__img-plate {
+            margin-right: 32px;
+        }
+    }
+}
+.hero__wrapper .wrapper__description::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 97px;
+    width: 40px;
+    height: 16px;
+    background-image: url('../images/hero/Arrow.png');
 }
 
 .hero__img {
     position: absolute;
+    max-width: 100%;
     z-index: 2;
     bottom: 0;
     left: 83px;
-    max-width: 100%;
+
+    @media screen and (min-width: 768px) {
+        left: 408px;
+        bottom: 0;
+    }
 }
 
 .hero__group-point {
@@ -89,4 +179,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
 }

@@ -1,5 +1,5 @@
 <section class="hero">
-  <div class="container">
+  <div class="container hero__container">
     <h1 class="hero__title">ice cream made with passion</h1>
     <ul class="hero__list-menu">
       <li class="hero__list-item list">
@@ -11,22 +11,44 @@
         >
       </li>
     </ul>
-    <p class="hero__text"><span class="hero__number">16</span>cafes</p>
-    <p class="hero__text"><span class="hero__number">23</span>food trucks</p>
+    <div class="hero__text-wrapper">
+      <p class="hero__text">
+        <span class="hero__number">16</span><br />
+        cafes
+      </p>
+      <p class="hero__text">
+        <span class="hero__number">23</span><br />
+        food trucks
+      </p>
+    </div>
     <div class="hero__wrapper wrapper">
-      <!-- <img
-        srcset="
-          ./images/hero/hero_ice-cream_152.jpg 152w,
-          ./images/hero/hero_ice-cream_225.jpg 225w,
-          ./images/hero/hero_ice-cream_304.jpg 304w,
-          ./images/hero/hero_ice-cream_450.jpg 450w
-        "
-        sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
-        src="./images/hero/hero_ice-cream_152.jpg"
-        alt="ice-cream"
-        class="wrapper__img"
-        loading="lazy"
-      /> -->
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/plate_ice-cream_225.png 225w,
+            ./images/hero/plate_ice-cream_450.png 450w
+          "
+          sizes="225px"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/plate_ice-cream_152.png 152w,
+            ./images/hero/plate_ice-cream_304.png 304w
+          "
+          sizes="152px"
+          type="image/png"
+        />
+        <img
+          class="hero__img-plate"
+          src="./images/hero/plate_ice-cream_152.png"
+          alt="a plate with ice-cream"
+          height="152"
+          loading="lazy"
+        />
+      </picture>
       <p class="wrapper__description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
@@ -49,7 +71,7 @@
           ./images/hero/ice-cream_536.png 536w
         "
         sizes="268px"
-        type="image/webp"
+        type="image/png"
       />
       <source
         media="(min-width: 320px)"
@@ -58,7 +80,7 @@
           ./images/hero/ice-cream_354.png 354w
         "
         sizes="177px"
-        type="image/webp"
+        type="image/png"
       />
       <img
         class="hero__img"
@@ -81,7 +103,7 @@
       <source
         media="(min-width: 768px)"
         srcset="
-          ./images/hero/group-point_768.png 768w,
+          ./images/hero/group-point_768.png   768w,
           ./images/hero/group-point_1536.png 1536w
         "
         sizes="768px"
@@ -91,7 +113,7 @@
         media="(min-width: 320px)"
         srcset="
           ./images/hero/group-point_320.png 320w,
-            ./images/hero/group-point_640.png 640w
+          ./images/hero/group-point_640.png 640w
         "
         sizes="320px"
         type="image/png"
@@ -104,29 +126,5 @@
         loading="lazy"
       />
     </picture>
-    <!-- <img
-      srcset="
-        ./images/hero/ice-cream_177.png 177w,
-        ./images/hero/ice-cream_268.png 268w,
-        ./images/hero/ice-cream_354.png 354w,
-        ./images/hero/ice-cream_456.png 456w,
-        ./images/hero/ice-cream_536.png 536w,
-        ./images/hero/ice-cream_912.png 912w
-      "
-      sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 320px) 177px, 100vw"
-      src="./images/hero/ice-cream_177.png"
-      alt="ice-cream"
-      class="hero__img"
-      loading="lazy"
-    />
-    <img srcset="
-            ./images/hero/group-point_320.png 320w,
-            ./images/hero/group-point_640.png 640w,
-            ./images/hero/group-point_768.png 768w,
-            ./images/hero/group-point_1200.png 1200w,
-            ./images/hero/group-point_1536.png 1536w,
-            ./images/hero/group-point_2400.png 2400w
-          " sizes="(min-width: 1200px) 1200px, (min-width: 768px) 768px, (min-width: 320px) 320px, 100vw"
-      src="./images/hero/group-point_320.png" alt="ice-cream" class="hero__group-point" loading="lazy" /> -->
   </div>
 </section>
