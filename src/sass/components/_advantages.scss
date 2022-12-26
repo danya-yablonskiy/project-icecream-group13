@@ -1,0 +1,136 @@
+.section-advantages {
+    padding-top: 22px;
+    padding-bottom: 64px;
+
+    background-color: $bg-color;
+    
+    @media screen and(min-width:768px) {
+        padding-top: 28px;
+        padding-bottom: 204px;
+        
+    }
+    @media screen and(min-width:1200px) {
+        padding-top: 30px;
+        padding-bottom: 178px;
+
+    }
+
+}
+.section-advantages__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.3;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+   @media screen and (max-width:767px) {
+        flex-direction: column;
+   }
+
+   @media screen and (min-width:768px) {
+       margin-top: -40px;
+       margin-bottom: -40px;
+   }
+
+   @media screen and (min-width:1200px) {
+       margin: -16px;
+}
+}
+.advantages__item {
+    position: relative;
+    text-align: center;
+
+    @media screen and (min-width:480px) {
+            width: 100%;
+    }
+    @media screen and (min-width:768px) {
+     width: calc((100% - 6 * 40px)/3);
+     margin: 40px;
+    }
+    @media screen and (min-width:1200px) {
+     width: calc((100% - 6 * 16px)/3);
+     margin: 16px;
+    }
+}
+.advantages__meta{
+    padding-top: 94px;
+    
+    @media screen and (min-width:768px) {
+    padding-top: 114px;
+    }
+    @media screen and (min-width:1200px) {
+    padding-top: 120px;
+    }
+    &::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $accent-color;
+        
+        }
+    &-cow::before{
+        content: url(../images/advantages/cow-min.png);
+    }
+    &-weight::before {
+        content: url(../images/advantages/weight-min.png);
+    }
+    &-ice::before {
+        content: url(../images/advantages/ice-min.png);
+    }
+}
+.advantages__title {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+    color: $primary-white-color;
+
+    @media screen and (min-width:768px) {
+     
+    font-size: 48px;
+    }
+    @media screen and (min-width:768px) {
+    
+    font-size: 58px;
+    }
+    
+}
+
+.advantages__description {
+    margin-top: 16px;
+    
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: $primary-white-color;
+
+    @media screen and (min-width:768px) {
+    margin-top: 12px;
+
+    font-weight: 400;
+    font-size: 14px;    
+    }
+    @media screen and (min-width:1200px) {
+    
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    }
+}

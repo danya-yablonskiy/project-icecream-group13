@@ -1,21 +1,24 @@
-
 @import './layouts/customer-reviews';
-
 
 @import './common';
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/placeholders';
+@import './utils/backdrop';
+@import './utils/is-hidden';
 @import './base/base';
 @import './components/footer';
 @import './components/header';
 
 @import '../../node_modules/swiper/swiper-bundle.min.css';
 
+@import './components/modal-buy-now';
+@import './components/advantages';
+
 @import './components/about';
 
-
-
 @import './components/contacts';
+
+@import './components/read-more-modal';
 
 // @import './';
