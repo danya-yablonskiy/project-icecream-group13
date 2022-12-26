@@ -1,17 +1,26 @@
 .hero {
     background-color: $bg-color;
+}
+
+.hero__container {
+    position: relative;
     padding-top: 99px;
     padding-bottom: 217px;
-    position: relative;
 
     @media screen and (min-width: 768px) {
         padding-top: 80px;
         padding-bottom: 164px;
     }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 118px;
+        padding-bottom: 292px;
+    }
 }
 
 .hero__title {
     display: inline-block;
+    max-width: 247px;
     margin-bottom: 32px;
     font-family: 'Seymour One';
     font-style: normal;
@@ -22,9 +31,19 @@
     text-transform: uppercase;
     color: $primary-white-color;
 
+    &--large {
+        font-size: 34px;
+    }
+
     @media screen and (min-width: 768px) {
-        max-width: 247px;
         margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 367px;
+        margin-bottom: 28px;
+        font-size: 38px;
+        line-height: calc(48/38);
     }
 }
 
@@ -41,11 +60,18 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 12px;
         }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 42px;
+            margin-right: 34px;
+        }
     }
 }
 
 .hero__link {
     display: block;
+    position: relative;
+    z-index: 999;
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 12px;
@@ -127,6 +153,21 @@
             }
         }
     }
+
+    @media screen and (min-width: 1200px) {
+        right: 16px;
+        top: 126px;
+
+        .hero__number {
+            font-size: 46px;
+            line-height: calc(56/46);
+        }
+
+        .hero__text {
+            font-size: 14;
+            line-height: calc(17/14);
+        }
+    }
 }
 
 .hero__wrapper {
@@ -150,27 +191,37 @@
             margin-right: 32px;
         }
     }
+
+    @media screen and (min-width: 1200px) {
+        .hero__img-plate {
+            margin-right: 16px;
+        }
+    }
 }
-.hero__wrapper .wrapper__description::after {
-    content:'';
+
+.wrapper__description::after {
+    content: '';
     position: absolute;
     left: 0;
     top: 97px;
     width: 40px;
     height: 16px;
-    background-image: url('../images/hero/Arrow.png');
+    background-image: url('../images/hero/Arrow.svg');
 }
 
 .hero__img {
     position: absolute;
-    max-width: 100%;
     z-index: 2;
     bottom: 0;
-    left: 83px;
+    left: 28%;
 
     @media screen and (min-width: 768px) {
         left: 408px;
         bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 652px;
     }
 }
 
@@ -188,5 +239,9 @@
 
     @media screen and (min-width: 768px) {
         width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
     }
 }
