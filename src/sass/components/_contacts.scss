@@ -1,24 +1,41 @@
 .contacts{
-    padding-top: 40px;
+    // padding-top: 40px;
     padding-bottom: 60px;
+    height: 1095px;
     background-color: $bg-color;
+    position: relative;
 
     @media screen and (min-width: 768px){
-        padding-top: 80px;
+        // padding-top: 80px;
         padding-bottom: 40px;
+        height: 360px;
     }
 
     @media screen and (min-width: 1200px){
-        padding-top: 100px;
+        // padding-top: 100px;
         padding-bottom: 120px;
+        height: 636px;
+    }
+    &__container{
+        position: absolute;
+        top:-353px;
+        left:50%;
+        transform: translate(-50%,0);
+
+        @media screen and (min-width:768px){
+            top:-299px;
+        }
+        @media screen and (min-width:1200px){
+            top:-128px;
+        }
     }
 }
 
 .contacts__list{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-
+    gap: 16px;    
+    
     @media screen and (max-width: 767px){
         width: 280px;
         margin-left: auto;

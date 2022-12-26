@@ -3,8 +3,9 @@
     &__bg{  
         
         position:relative;
+        // max-width: 1037px;
         width: 100vw;
-        height: 100vh;
+        height: 1037px;
         // padding-top: 178px;
         padding-bottom: 393px;
         
@@ -22,10 +23,12 @@
         }
         @media screen and (min-width:768px) and (max-width:1199px){
             max-width: 768px;
+            height: 1017px;
             background-image: url(../../assets/customer-reviews/background_tablet.jpg);
         }
         @media screen and (min-width:1200px){
             max-width: 1300px;
+            height: 1053px;
             background-image: url(../../assets/customer-reviews/backgroud_desktop.jpg);
         }
     }
@@ -151,6 +154,7 @@
         @media screen and (min-width:768px){
             font-size: 16px;
             line-height:calc(30px / 16px);
+            margin: 0 0 44px 0;
         }
         
     }
