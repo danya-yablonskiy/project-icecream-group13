@@ -1,9 +1,8 @@
 .hero {
     background-color: $bg-color;
     padding-top: 99px;
+    padding-bottom: 217px;
     position: relative;
-    height: 502px;
-
 }
 
 .hero__title {
@@ -80,11 +79,14 @@
 .hero__img {
     position: absolute;
     z-index: 2;
-    top: 285px;
+    bottom: 0;
     left: 83px;
-    
+    max-width: 100%;
 }
-.hero__group-icon--mobile {
+
+.hero__group-point {
     position: absolute;
     bottom: 0;
+    left: 0;
+    width: 100%;
 }

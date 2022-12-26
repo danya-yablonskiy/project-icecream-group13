@@ -13,51 +13,6 @@
     </ul>
     <p class="hero__text"><span class="hero__number">16</span>cafes</p>
     <p class="hero__text"><span class="hero__number">23</span>food trucks</p>
-    <!-- <picture>
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          ./images/hero/hero_ice-cream_225.webp 225w,
-          ./images/hero/hero_ice-cream_450.webp 450w
-        "
-        sizes="225px"
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          ./images/hero/hero_ice-cream_225.jpg 225w,
-          ./images/hero/hero_ice-cream_450.jpg 450w
-        "
-        sizes="225px"
-        type="image/jpg"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/hero/hero_ice-cream_152.webp 152w,
-          ./images/hero/hero_ice-cream_304.webp 304w
-        "
-        sizes="152px"
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/hero/hero_ice-cream_152.jpg 152w,
-          ./images/hero/hero_ice-cream_304.jpg 304w
-        "
-        sizes="152px"
-        type="image/jpg"
-      />
-      <img
-        class="hero__img"
-        src="./images/hero/hero_ice-cream_152.jpg"
-        alt="ice-cream"
-        height="152"
-        loading="lazy"
-      />
-    </picture> -->
     <div class="hero__wrapper wrapper">
       <!-- <img
         srcset="
@@ -77,7 +32,79 @@
         tempor incididunt ut labore et
       </p>
     </div>
-    <img
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/ice-cream_456.png 456w,
+          ./images/hero/ice-cream_912.png 912w
+        "
+        sizes="456px"
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/ice-cream_268.png 268w,
+          ./images/hero/ice-cream_536.png 536w
+        "
+        sizes="268px"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 320px)"
+        srcset="
+          ./images/hero/ice-cream_177.png 177w,
+          ./images/hero/ice-cream_354.png 354w
+        "
+        sizes="177px"
+        type="image/webp"
+      />
+      <img
+        class="hero__img"
+        src="./images/hero/ice-cream_177.png"
+        alt="ice-cream"
+        height="217"
+        loading="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/group-point_1200.png 1200w,
+          ./images/hero/group-point_2400.png 2400w
+        "
+        sizes="1200px"
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/group-point_768.png 768w,
+          ./images/hero/group-point_1536.png 1536w
+        "
+        sizes="768px"
+        type="image/png"
+      />
+      <source
+        media="(min-width: 320px)"
+        srcset="
+          ./images/hero/group-point_320.png 320w,
+            ./images/hero/group-point_640.png 640w
+        "
+        sizes="320px"
+        type="image/png"
+      />
+      <img
+        class="hero__group-point"
+        src="./images/hero/group-point_320.png"
+        alt="ice-cream"
+        height="50"
+        loading="lazy"
+      />
+    </picture>
+    <!-- <img
       srcset="
         ./images/hero/ice-cream_177.png 177w,
         ./images/hero/ice-cream_268.png 268w,
@@ -92,15 +119,14 @@
       class="hero__img"
       loading="lazy"
     />
+    <img srcset="
+            ./images/hero/group-point_320.png 320w,
+            ./images/hero/group-point_640.png 640w,
+            ./images/hero/group-point_768.png 768w,
+            ./images/hero/group-point_1200.png 1200w,
+            ./images/hero/group-point_1536.png 1536w,
+            ./images/hero/group-point_2400.png 2400w
+          " sizes="(min-width: 1200px) 1200px, (min-width: 768px) 768px, (min-width: 320px) 320px, 100vw"
+      src="./images/hero/group-point_320.png" alt="ice-cream" class="hero__group-point" loading="lazy" /> -->
   </div>
-  <svg class="hero__group-icon hero__group-icon--mobile" width="320" height="50">
-    <use href="./images/symbol-defs.svg#icon-group"></use>
-  </svg>
-  <!-- <svg class="hero__group-icon hero__group-icon--tablet" width="768" height="68">
-    <use href="./images/symbol-defs.svg#icon-group-1"></use>
-  </svg>
-  <svg class="hero__group-icon hero__group-icon--desktop" width="50" height="16">
-    <use href="./images/symbol-defs.svg#icon-group-2"></use>
-  </svg> -->
-  <!-- <img src="./images/hero/group.svg" alt="" > -->
 </section>
