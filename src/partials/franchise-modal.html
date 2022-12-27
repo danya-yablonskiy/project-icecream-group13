@@ -1,0 +1,62 @@
+<div class="backdrop is-hidden" data-modal-franchise="">
+  <div class="franchise-modal modal">
+    <button class="close-btn" data-modal-close>
+      <svg class="close-btn__icon close-btn--icon-mob" width="20" height="20">
+        <use href="./images/symbol-defs.svg#close-icon__mob"></use>
+      </svg>
+      <svg class="close-btn__icon close-btn--icon-desk" width="24" height="24">
+        <use
+          class="close-btn__icon-desk"
+          href="./images/symbol-defs.svg#close-icon__desk"
+        ></use>
+      </svg>
+    </button>
+
+    <h2 class="franchise-modal__title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h2>
+
+    <p class="franchise-modal__text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+
+    <form class="franchise-modal-form">
+      <input
+        class="franchise-modal-form__input"
+        type="text"
+        name="franchise-modal-form__username"
+        placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username should only contain letters. e.g. John Smith"
+      />
+
+      <input
+        class="franchise-modal-form__input"
+        type="tel"
+        name="franchise-modal-form__phone"
+        placeholder="Phone"
+        pattern="^\+\d{2}\d{3}\d{3}\d{2}\d{2}$"
+        title="Phone number should only contain format e.g. +3801234567"
+      />
+
+      <input
+        class="franchise-modal-form__input"
+        type="email"
+        name="franchise-modal-form__email"
+        placeholder="Email"
+      />
+
+      <textarea
+        class="franchise-modal-form__input comment-input"
+        name="franchise-modal-form__comment"
+        placeholder="Comment"
+      ></textarea>
+
+      <button class="franchise-modal-form__btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
