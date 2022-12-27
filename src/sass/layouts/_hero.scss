@@ -86,6 +86,8 @@
         padding: 11px 26px;
         border: 2px solid $accent-color;
         border-radius: 8px;
+        @include animation(border-color);
+        @include animation(color);
 
         @media screen and (min-width: 1200px) {
             border-radius: 10px;
@@ -109,6 +111,7 @@
     &--second {
         text-decoration: underline;
         color: $accent-color;
+        @include animation(color);
 
         &:hover {
             color: $button-hover-focus-color;
@@ -189,6 +192,20 @@
 
         .hero__img-plate {
             margin-right: 32px;
+            animation: rotateY 4500ms cubic-bezier(0.4, 0, 0.2, 1) ;
+        }
+
+        @keyframes rotateY {
+            0% {
+                transform: perspective(400px) rotateY(0deg);
+                scale: 0;
+                
+            }
+
+            100% {
+                scale: 1;
+                transform: perspective(400px) rotateY(360deg);
+            }
         }
     }
 
@@ -214,6 +231,18 @@
     z-index: 2;
     bottom: 0;
     left: 28%;
+    animation: Appearance 4500ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
+    @keyframes Appearance {
+        0% {
+            opacity: 0;
+            
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 
     @media screen and (min-width: 768px) {
         left: 408px;
