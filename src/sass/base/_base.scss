@@ -1,8 +1,8 @@
-body{
+body {
   background-color: $primary-white-color;
   color: $primary-black-color;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.04em
+  letter-spacing: 0.04em;
 }
 
 /* Щоб не було випадання */
@@ -37,24 +37,24 @@ a {
 // Параметри для контейнеру
 .container {
   min-width: 320px;
-  max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    }
