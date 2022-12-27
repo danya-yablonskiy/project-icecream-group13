@@ -6,11 +6,11 @@
   background-color: $bg-color;
 
   @media screen and (min-width: 768px) {
-    padding: 15px 0;
+    padding: 18px 0;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 8px 0;
+    padding: 20px 0;
   }
 }
 
@@ -18,17 +18,17 @@
 
 .logo {
   &__image {
-    width: 40px;
-    height: 43px;
+    width: 33px;
+    height: 33px;
 
     @media screen and (min-width: 768px) {
-      width: 48px;
-      height: 52px;
+      width: 36px;
+      height: 36px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 60px;
-      height: 65px;
+      width: 45px;
+      height: 45px;
     }
   }
 }
@@ -48,9 +48,9 @@
 
     @media screen and (max-width: 1199px) {
       position: fixed;
-      top: 53px;
+      top: 56px;
       left: 0;
-      width: 320px;
+      width: 100vw;
       height: 100vh;
       padding-top: 50px;
       padding-bottom: 64px;
@@ -66,8 +66,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      top: 67px;
-      width: 768px;
+      top: 76px;
     }
   }
 }
