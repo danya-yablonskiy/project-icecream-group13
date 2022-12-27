@@ -58,3 +58,7 @@ a {
       padding-right: 16px;
     }
     }
+  a:hover,
+  a:focus {cursor: url(../images/cursor.png), pointer; }
+  button:hover,
+  button:focus {cursor: url(../images/cursor.png), pointer; }
