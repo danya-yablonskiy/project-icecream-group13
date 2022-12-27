@@ -29,6 +29,11 @@ img {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: $button-black-color;
+}
+
 // Параметри для контейнеру
 .container {
   min-width: 320px;

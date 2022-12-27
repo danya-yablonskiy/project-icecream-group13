@@ -4,11 +4,13 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/placeholders';
+@import './utils/mixins';
 @import './utils/backdrop';
 @import './utils/is-hidden';
 @import './base/base';
 @import './components/footer';
 @import './components/header';
+@import './layouts/hero';
 
 @import '../../node_modules/swiper/swiper-bundle.min.css';
 
