@@ -4,16 +4,16 @@
 
 .hero__container {
     position: relative;
-    padding-top: 99px;
+    padding-top: 40px;
     padding-bottom: 217px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 80px;
+        padding-top: 4px;
         padding-bottom: 164px;
     }
 
     @media screen and (min-width: 1200px) {
-        padding-top: 118px;
+        padding-top: 45px;
         padding-bottom: 292px;
     }
 }
@@ -95,6 +95,7 @@
 
             &:focus {
                 color: $primary-white-color;
+                outline: none;
             }
 
             &:disabled {
@@ -119,6 +120,7 @@
 
         &:focus {
             color: $primary-white-color;
+            outline: none;
         }
 
         &:disabled {
