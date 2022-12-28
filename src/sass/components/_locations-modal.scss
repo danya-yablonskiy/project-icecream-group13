@@ -1,0 +1,113 @@
+.locations-modal {
+  position: absolute;
+  padding: 28px;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: top left;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: $primary-white-color;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+
+  @media screen and (min-width: 480px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 60px;
+  }
+
+  &__title {
+    font-family: 'Seymour One', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+
+  &__map {
+    margin-bottom: 24px;
+    width: 100%;
+    height: 199px;
+    border: none;
+    border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+      height: 260px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 34px;
+    text-align: center;
+    border: transparent;
+    border-radius: 10px;
+    background-color: $accent-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: $button-hover-focus-color;
+    }
+
+    &:focus {
+      color: $primary-white-color;
+      background-color: $button-hover-focus-color;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: $primary-black-color;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.21;
+    }
+  }
+}
+
+.close-btn {
+  position: absolute;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: $primary-black-color;
+  }
+}
+
+.close-btn--icon-mob {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.close-btn--icon-desk {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
