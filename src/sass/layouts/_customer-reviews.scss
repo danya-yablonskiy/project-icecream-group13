@@ -1,6 +1,14 @@
 .customer {
+  &__frame{
+    // position:relative;
+    // width: 100%;
+    // height:1057px;
+  }
   &__bg {
-    position: relative;
+    position:relative;
+    // top:-98px;
+    // left:-52px;
+    // right: -80px;
     width: 100vw;
     height: 1037px;
     padding-bottom: 393px;
