@@ -67,25 +67,25 @@ img {
   background-size: cover;
 
   @media screen and (max-width: 767.98px) {
-    background-image: url('../../img/fon-2.jpg');
+    background-image: url('../images/products/fon-2.jpg');
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-      background-image: url('../../img/fon-2@2x.jpg');
+      background-image: url('../images/products/fon-2@2x.jpg');
     }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
-    background-image: url('../../img/fon_tab-1.jpg');
+    background-image: url('../images/products/fon_tab-1.jpg');
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-      background-image: url('../../img/fon_tab@2x.jpg');
+      background-image: url('../images/products/fon_tab@2x.jpg');
     }
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    background-image: url('../../img/fon_desc1.jpg');
+    background-image: url('../images/products/fon_desc1.jpg');
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-      background-image: url('../../img/fon_desc@2x.jpg');
+      background-image: url('../images/products/fon_desc@2x.jpg');
     }
   }
 }
