@@ -19,6 +19,10 @@
     opacity: 0;
     pointer-events: none;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
 }
 
 .modal-buy-now {
@@ -34,19 +38,8 @@
   border: 2px solid $accent-color;
   border-radius: 10px;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .backdrop--is-hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-
   @media screen and (min-width: 768px) {
     width: 568px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%) scale(1);
   }
 
   &__close-button {
@@ -165,6 +158,10 @@
     &:focus {
       color: $primary-white-color;
       background-color: $button-hover-focus-color;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
     }
   }
 }

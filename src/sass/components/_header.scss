@@ -2,15 +2,15 @@
 
 .page-header {
   position: relative;
-  padding: 10px 0;
+  padding: 12px 0;
   background-color: $bg-color;
 
   @media screen and (min-width: 768px) {
-    padding: 18px 0;
+    padding: 15px 0;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 20px 0;
+    padding: 18px 0;
   }
 }
 
@@ -18,17 +18,17 @@
 
 .logo {
   &__image {
-    width: 33px;
-    height: 33px;
+    width: 40px;
+    height: 47px;
 
     @media screen and (min-width: 768px) {
-      width: 36px;
-      height: 36px;
+      width: 54px;
+      height: 63px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 45px;
-      height: 45px;
+      width: 60px;
+      height: 70px;
     }
   }
 }
@@ -44,7 +44,7 @@
   }
 
   &__wrapper {
-    z-index: 999;
+    z-index: 9998;
 
     @media screen and (max-width: 1199px) {
       position: fixed;
@@ -82,6 +82,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
+    margin-left: 120px;
   }
 
   &__item:not(:last-child) {
@@ -181,6 +182,11 @@
 
   &__icon {
     fill: currentColor;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__icon-cross {
