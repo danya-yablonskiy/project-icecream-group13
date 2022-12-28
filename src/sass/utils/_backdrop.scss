@@ -10,6 +10,10 @@
   z-index: 9999;
   overflow-y: scroll;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
+
   &.is-hidden .modal {
     transform: scale(0.1);
   }
