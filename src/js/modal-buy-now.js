@@ -9,6 +9,7 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
+    document.body.classList.toggle('open-modal');
     refs.modal.classList.toggle('header-backdrop--is-hidden');
   }
 })();

@@ -29,6 +29,11 @@ img {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: $button-black-color;
+}
+
 // Параметри для контейнеру
 .container {
   min-width: 320px;
@@ -53,3 +58,7 @@ img {
       padding-right: 16px;
     }
     }
+  a:hover,
+  a:focus {cursor: url(../images/cursor.png), pointer; }
+  button:hover,
+  button:focus {cursor: url(../images/cursor.png), pointer; }
