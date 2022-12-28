@@ -1,0 +1,159 @@
+<section class="products centered sections">
+  <div class="container">
+    <p class="natural-product">100% natural</p>
+    <h2 class="products__title">products</h2>
+    <ul class="products__list list">
+      <li class="products__list-item">
+        <img
+          src="./images/tel_cream.png"
+          alt="Морозиво"
+          class="products__img-tel"
+        />
+
+        <img
+          src="./images/desc_cream.png"
+          alt="Морозиво"
+          class="products__img-desc"
+        />
+
+        <div class="wrap-text">
+          <h3 class="products__list-title cream">ice cream</h3>
+          <p class="products__list-text">
+            Soft ice cream with a delicate taste. Made with milk, cream, sugar
+            and natural stabilizer
+          </p>
+          <button type="button" class="button-ingredients" data-modal-ingredients-open>
+          <svg width="40" height="16">
+            <use href="./images/symbol-defs.svg#icon-arrow">
+            </use>
+          </svg>
+        </button>
+        </div>
+      </li>
+      <li class="products__list-item">
+        <img
+          class="products__img-tel"
+          src="./images/tel_koffee.png"
+          alt="Кофе"
+        />
+        <img
+          src="./images/desc_koffee.png"
+          alt="Морозиво"
+          class="products__img-desc"
+        />
+        <div class="wrap-text">
+          <h3 class="products__list-title coffee">ice coffee</h3>
+          <p class="products__list-text">
+            Fragrant invigorating drink created from 100% natural ingredients
+            without the use of preservatives and flavor enhancers
+          </p>
+          <button type="button" class="button-ingredients" data-modal-ingredients-open>
+          <svg width="40" height="16">
+            <use href="./images/symbol-defs.svg#icon-arrow">
+            </use>
+          </svg>
+        </button>
+        </div>
+      </li>
+      <li class="products__list-item">
+        <img
+          class="products__img-tel"
+          src="./images/tel_shakes.png"
+          alt="Молочний коктейль"
+        />
+        <img
+          src="./images/desc_shakes.png"
+          alt="Морозиво"
+          class="products__img-desc"
+        />
+        <div class="wrap-text">
+          <h3 class="products__list-title milkshakes">milkshakes</h3>
+          <p class="products__list-text">
+            Sweet drinks based on milk and ice cream, supplemented with syrups,
+            fruits, berries and other sweets of your choice
+          </p>
+          <button type="button" class="button-ingredients" data-modal-ingredients-open>
+          <svg width="40" height="16">
+            <use href="./images/symbol-defs.svg#icon-arrow">
+            </use>
+          </svg>
+        </button>
+        </div>
+
+        <!-- модалка -->
+      </li>
+    </ul>
+  </div>
+  <div class="backdrop is-hidden" data-modal-ingredients>
+          <div class="modal-ingredients">
+            <button class="modal-ingredients__button-close" data-modal-ingredients-close>
+            <svg class="modal-ingredients__close-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-x"></use>
+            </svg>
+            </button>
+            <p class="modal-ingredients__title">Chololate icecream</p>
+            <div class="elipse">
+              <img src="./images/modal_ing@1x.jpg" alt="ice cream" class="elipse_img" srcset="./images/modal_ing@1x.jpg, ./images/modal_ing@2x.jpg">
+            </div>
+            <ul class="list calories-list">
+              <li class="calories-list__item">
+                <div class="calories-list__wrapper">
+                  <span class="calories-list__nutrients">kcal</span>
+                  <div class="calories-list__circle-wrapper"><span class="calories-list__number">320</span></div>
+                </div>
+              </li>
+              <li class="calories-list__item">
+                <div class="calories-list__wrapper">
+                  <span class="calories-list__nutrients">Prote...</span>
+                  <div class="calories-list__circle-wrapper"><span class="calories-list__number">320</span></div>
+                </div>
+              </li>
+              <li class="calories-list__item">
+                <div class="calories-list__wrapper">
+                  <span class="calories-list__nutrients">Fats</span>
+                  <div class="calories-list__circle-wrapper"><span class="calories-list__number">320</span></div>
+                </div>
+              </li>
+              <li class="calories-list__item">
+                <div class="calories-list__wrapper">
+                  <span class="calories-list__nutrients">Carbs</span>
+                  <div class="calories-list__circle-wrapper"><span class="calories-list__number">320</span></div>
+                </div>
+              </li>
+            </ul>
+            <h3 class="modal-ingredients__second-title">Ingredients</h3>
+            <ul class="ingedients-list list">
+              <li class="ingedients-list__item"><span class="ingedients-list__span">Milk</span>100ml</li>
+              <li class="ingedients-list__item"><span class="ingedients-list__span">Belgian chocolate</span>20g</li>
+              <li class="ingedients-list__item"><span class="ingedients-list__span">Cream</span>150 ml</li>
+              <li class="ingedients-list__item"><span class="ingedients-list__span">Cocoa powder</span> 30g</li>
+              <li class="ingedients-list__item"><span class="ingedients-list__span">Sugar</span>40g</li>
+              <li class="ingedients-list__item"><span class="ingedients-list__span">Vanilla sugar</span>10g</li>
+            </ul>
+            <form class="franchise-modal-form">
+              <input
+              class="franchise-modal-form__input"
+              type="text"
+              name="franchise-modal-form__username"
+              placeholder="Name"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              title="Username should only contain letters. e.g. John Smith"
+              />
+              <input
+              class="franchise-modal-form__input"
+              type="tel"
+              name="franchise-modal-form__phone"
+              placeholder="Phone"
+              pattern="^\+\d{2}\d{3}\d{3}\d{2}\d{2}$"
+              title="Phone number should only contain format e.g. +3801234567"
+              />
+              <textarea
+              class="franchise-modal-form__input comment-input"
+              name="franchise-modal-form__comment"
+              placeholder="Comment"
+              ></textarea>
+              <button class="franchise-modal-form__btn" type="submit">Submit</button>
+            </form>
+        </div>
+      </div>
+</section>
