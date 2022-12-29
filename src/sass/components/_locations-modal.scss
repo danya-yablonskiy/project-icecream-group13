@@ -95,6 +95,10 @@
     right: 0;
     fill: $primary-black-color;
   }
+
+  &:hover &__icon {
+    fill: $accent-color;
+  }
 }
 
 .close-btn--icon-mob {
