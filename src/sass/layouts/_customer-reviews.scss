@@ -21,8 +21,9 @@
     background-size: cover;
     text-align: center;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width:321px) and (max-width: 767px) {
       max-width: 767px;
+      height: 1131px;
       background-image: url(../../src/images/customer-reviews/backgroud_mobile.jpg);
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -86,6 +87,9 @@
     top: -32px;
     left: 50%;
     transform: translate(-50%, 0);
+    @media screen and (min-width:480px){
+      top: -28px;
+    }
     @media screen and (min-width: 768px) {
       top: -144px;
     }
