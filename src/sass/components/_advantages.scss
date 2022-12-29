@@ -1,17 +1,17 @@
 .section-advantages {
-    padding-top: 22px;
     padding-bottom: 64px;
+    padding-top: 16px;
 
     background-color: $bg-color;
     
     @media screen and(min-width:768px) {
-        padding-top: 28px;
         padding-bottom: 204px;
+        padding-top: 32px;
         
     }
     @media screen and(min-width:1200px) {
-        padding-top: 30px;
         padding-bottom: 178px;
+        padding-top: 40px;
 
     }
 
@@ -58,48 +58,18 @@
      width: calc((100% - 6 * 16px)/3);
      margin: 16px;
     }
-}
-.advantages__meta{
-    padding-top: 94px;
-    
-    @media screen and (min-width:768px) {
-    padding-top: 114px;
-    }
-    @media screen and (min-width:1200px) {
-    padding-top: 120px;
-    }
-    &::before {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: $accent-color;
-        
+        &:not(:last-child) {
+            @media screen and (max-width:767px) {
+                margin-bottom: 28px;
+            }
         }
-    &-cow::before{
-        content: url(../images/advantages/cow-min.png);
-    }
-    &-weight::before {
-        content: url(../images/advantages/weight-min.png);
-    }
-    &-ice::before {
-        content: url(../images/advantages/ice-min.png);
-    }
 }
 .advantages__title {
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
-
+    
     text-transform: uppercase;
     color: $primary-white-color;
 
@@ -111,7 +81,43 @@
     
     font-size: 58px;
     }
-    
+
+  &::before {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              position: relative;
+              bottom: 16px;
+              left: 50%;
+              transform: translate(-50%);
+
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background-color: $accent-color;
+ 
+
+    @media screen and(min-width:768px) {
+        bottom: 32px;
+
+    }
+
+    @media screen and(min-width:1200px) {
+        bottom: 40px;
+
+    }
+              }
+        
+          &-cow::before{
+              content: url(../images/advantages/cow-min.png);
+          }
+          &-weight::before {
+              content: url(../images/advantages/weight-min.png);
+          }
+          &-ice::before {
+              content: url(../images/advantages/ice-min.png);
+          }  
 }
 
 .advantages__description {
