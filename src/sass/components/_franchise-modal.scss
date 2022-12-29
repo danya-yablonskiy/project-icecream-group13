@@ -1,19 +1,15 @@
 .franchise-modal {
-  position: absolute;
+  position: relative;
   padding: 28px;
-  top: 50%;
-  left: 50%;
-  width: 95%;
-  transform: translate(-50%, -50%) scale(1);
-  transform-origin: top left;
+  width: 280px;
+  margin: 0 auto;
+  transform: scale(1);
+  transform-origin: center;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: $primary-white-color;
   border: 2px solid $accent-color;
   border-radius: 10px;
-
-  @media screen and (min-width: 480px) {
-    width: 280px;
-  }
+  z-index: 9999;
 
   @media screen and (min-width: 768px) {
     width: 568px;
@@ -63,10 +59,18 @@
     background-color: rgba(248, 210, 78, 0.1);
     outline: none;
 
+    &:focus {
+      border-color: $accent-color;
+    }
+
     &::placeholder {
       font-size: 12px;
       line-height: 1.4;
       color: $primary-black-color;
+    }
+
+    &:invalid {
+      border-color: red;
     }
 
     @media screen and (min-width: 768px) {
@@ -74,10 +78,6 @@
       padding: 11px 16px;
       width: 368px;
       height: 42px;
-    }
-
-    &:invalid {
-      border-color: red;
     }
   }
 
