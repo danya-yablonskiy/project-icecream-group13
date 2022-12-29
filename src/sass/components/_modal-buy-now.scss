@@ -103,6 +103,11 @@
     border: 1px solid $bg-color;
     border-radius: 10px;
 
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.4;
+      color: $primary-black-color;
+    }
     @media screen and (min-width: 768px) {
       margin-bottom: 32px;
       width: 368px;
