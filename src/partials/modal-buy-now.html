@@ -1,8 +1,14 @@
-<div class="header-backdrop header-backdrop--is-hidden" data-modal>
-  <div class="modal-buy-now">
-    <button type="button" class="modal-buy-now__close-button" data-modal-close>
-      <svg class="modal-buy-now__close-icon">
-        <use href="./images/symbol-defs.svg#icon-cross"></use>
+<div class="backdrop is-hidden" data-modal-buy-now>
+  <div class="modal-buy-now modal">
+    <button class="close-btn" data-modal-buy-now-close>
+      <svg class="close-btn__icon close-btn--icon-mob" width="20" height="20">
+        <use href="./images/symbol-defs.svg#close-icon__mob"></use>
+      </svg>
+      <svg class="close-btn__icon close-btn--icon-desk" width="24" height="24">
+        <use
+          class="close-btn__icon-desk"
+          href="./images/symbol-defs.svg#close-icon__desk"
+        ></use>
       </svg>
     </button>
     <p class="modal-buy-now__text">Buy now</p>
@@ -91,8 +97,8 @@
         id="name"
         class="form-buy-now__input"
         placeholder="Name"
-        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-        title="Username must be two words separated by space."
+        pattern="^[a-zA-Z]+$"
+        title="Username should only contain letters. e.g. John"
       />
       <input
         type="tel"
@@ -100,8 +106,8 @@
         id="phone"
         class="form-buy-now__input"
         placeholder="Phone"
-        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-        title="Phone format must be: +380 (97) 123-12-22"
+        pattern="^\+\d{2}\d{3}\d{3}\d{2}\d{2}$"
+        title="Phone number should only contain format e.g. +3801234567"
       />
       <textarea
         class="form-buy-now__textarea"
