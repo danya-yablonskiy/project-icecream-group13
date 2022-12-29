@@ -1,19 +1,15 @@
 .read-more-modal {
-  position: absolute;
+  position: relative;
   padding: 28px;
-  top: 50%;
-  left: 50%;
-  width: 95%;
-  transform: translate(-50%, -50%) scale(1);
-  transform-origin: top left;
+  width: 280px;
+  margin: 0 auto;
+  transform: scale(1);
+  transform-origin: center;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: $primary-white-color;
   border: 2px solid $accent-color;
   border-radius: 10px;
-
-  @media screen and (min-width: 480px) {
-    width: 280px;
-  }
+  z-index: 9999;
 
   @media screen and (min-width: 768px) {
     width: 568px;
@@ -76,15 +72,15 @@
   }
 }
 
-.close-btn--icon-mob{
-  @media screen and (min-width:768px){
-    display:none;
+.close-btn--icon-mob {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
-.close-btn--icon-desk{
+.close-btn--icon-desk {
   display: none;
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
