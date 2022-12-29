@@ -1,6 +1,14 @@
 .customer {
+  &__frame{
+    // position:relative;
+    // width: 100%;
+    // height:1057px;
+  }
   &__bg {
-    position: relative;
+    position:relative;
+    // top:-98px;
+    // left:-52px;
+    // right: -80px;
     width: 100vw;
     height: 1037px;
     padding-bottom: 393px;
@@ -39,15 +47,23 @@
       padding-left: 20px;
       padding-right: 20px;
     }
+    @media screen and (min-width:321px){
+      max-width: 480px;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     @media screen and (min-width: 768px) {
-      width: 704px;
+      max-width: 704px;
+      width: 100%;
       padding-left: 32px;
       padding-right: 32px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 1200px;
+      max-width: 1200px;
+      width: 100%;
       padding-left: 16px;
       padding-right: 16px;
     }
@@ -84,6 +100,9 @@
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width:321px){
+      max-width: 440px;
+    }
     @media screen and (min-width: 768px) {
       max-width: 704px;
       border-radius: 18px;
@@ -119,7 +138,11 @@
     border-radius: 10px;
 
     padding: 35px 39px;
-    margin: 0 0 32px 0;
+    margin: 0 auto 32px auto;
+    @media screen and (max-width:767px){
+      width: 280px;
+    }
+   
     @media screen and (min-width: 768px) {
       border-radius: 24px;
       padding: 28px 80px 29px 80px;
